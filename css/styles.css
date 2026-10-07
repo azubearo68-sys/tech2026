@@ -1,0 +1,191 @@
+*{ margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #F4F0EA;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: #fff7fb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}/* === HEADER === */
+header {
+  display: grid; /* usamos grid para organizar logo | título | nav */
+  grid-template-columns: 150px 1fr 200px; /* logo fijo | título flexible | nav fijo */
+  align-items: center; /* centra verticalmente los elementos */
+  padding: 10px 20px;
+  background-color: #7A8D7B; /* color de fondo verde suave */
+}
+
+/* Logo a la izquierda */
+.div-logo img {
+  width: 80px;   /* tamaño del logo */
+  height: auto;  /* mantiene proporción */
+}
+
+/* Título centrado */
+.titulo-home {
+  text-align: center; /* centra el texto en su columna */
+  margin: 0;          /* quita márgenes extra */
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;        /* blanco para contraste */
+}
+
+/* Nav a la derecha */
+nav ul {
+  list-style: none;   /* quita viñetas */
+  display: flex;      /* organiza los links en fila */
+  gap: 15px;          /* espacio entre links */
+  justify-content: flex-end; /* empuja todo a la derecha */
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none; /* quita subrayado */
+  color: #fff;           /* blanco para contraste */
+  font-weight: 700;
+}
+
+/* --- MAIN --- */
+main {
+  display: flex;          /* usamos flexbox */
+  flex-direction: column; /* organiza secciones en columna */
+  align-items: center;    /* centra horizontalmente */
+  padding: 20px;
+}
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin:20px 0 ;
+  border-bottom: 2px solid #7A8D7B;;
+  color: #333;
+  padding-bottom: 8px;
+}
+.planta p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}/*ESTILO PARA LOS PRECIOS */
+.precio {
+  font-size: 1.1rem;        /* un poco más grande que el texto normal */
+  font-weight: bold;        /* en negrita para destacar */
+  color: #2E7D32;           /* verde intenso, asociado a naturaleza y positivo */
+  background-color: #E8F5E9;/* fondo verde muy claro para resaltar */
+  padding: 5px 10px;        /* espacio interno alrededor del texto */
+  border-radius: 6px;       /* esquinas redondeadas */
+  display: inline-block;    /* se comporta como bloque pequeño */
+  margin-top: 8px;          /* separación respecto al párrafo anterior */
+}
+
+
+/* Galería de plantas */
+.galeria {
+  display: flex;          /* organiza artículos en fila */
+  flex-wrap: wrap;        /* permite que bajen a otra línea si no entran */
+  gap: 20px;              /* espacio entre artículos */
+  justify-content: center;/* centra la galería */
+}
+
+.planta {
+  flex: 1 1 250px;        /* cada artículo ocupa mínimo 250px y se adapta */
+  border: 1px solid #ccc; /* borde suave */
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.planta img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Botones */
+.btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bg.secondary {
+  background-color: #7A8D7B; /* verde suave */
+}
+
+.text-dark {
+  color: #fff; /* texto blanco */
+}
+
+       /*FOOTER */
+    
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.footer-icons a:hover {
+  color: #ff9800;   /* Color al pasar el mouse */
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+              /*contacto*/
+  #contacto {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+#contacto , h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+      
