@@ -59,9 +59,11 @@ nav a {
 
 /* --- MAIN --- */
 main {
+  flex: 1;
   display: flex;          /* usamos flexbox */
   flex-direction: column; /* organiza secciones en columna */
   align-items: center;    /* centra horizontalmente */
+  flex-wrap: wrap; 
   padding: 20px;
 }
 h2 {
@@ -75,6 +77,7 @@ h2 {
 .planta p {
   font-size: 1rem;
   color: #555;
+  text-align: center;
   margin: 8px 0;
 }/*ESTILO PARA LOS PRECIOS */
 .precio {
@@ -100,17 +103,21 @@ h2 {
 .planta {
   flex: 1 1 250px;        /* cada artículo ocupa mínimo 250px y se adapta */
   border: 1px solid #ccc; /* borde suave */
-  border-radius: 8px;
+  border-radius: 8px;/*
   padding: 10px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9;*/
+
 }
 
+
 .planta img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
+  width: 100%;              /* ocupa todo el ancho de la card */
+  height: 250px;            /* altura fija para todas */
+  object-fit: cover;        /* recorta manteniendo proporción */
+  border-radius: 6px;       /* esquinas redondeadas */
 }
+
 
 /* Botones */
 .btn {
