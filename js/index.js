@@ -11,7 +11,7 @@ const renderizarProductos = () => {
       data.forEach((producto) => {
         // creamos los articles y sus contenidos
         const tarjeta = document.createElement("article");
-        tarjeta.classList.add("card", "text-dark");
+        tarjeta.classList.add("planta", "text-dark");
 
         const img = document.createElement("img");
         img.src = `./${producto.img}`;
@@ -38,6 +38,7 @@ const renderizarProductos = () => {
         tarjeta.appendChild(boton);
 
         contenedor.appendChild(tarjeta);
+        
       });
     })
     .catch((error) => console.log(error));
