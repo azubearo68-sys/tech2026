@@ -3,7 +3,7 @@ import { actualizarContador } from "./ui.js";
 import { agregarAlCarrito } from "./funcionesCarrito.js";
 
 const renderizarProductos = () => {
-  const contenedor = document.getElementById("contenedor-tarjetas");
+  const contenedor = document.getElementById("contenedor-tarjeta");
 
   fetch("./data/productos.json")
     .then((response) => response.json())

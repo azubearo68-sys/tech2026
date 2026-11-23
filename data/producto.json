@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "nombre": "Macetas para suculentas",
+    "precio": 1000,
+    "img": "img/muchasmacetas.jpg"
+  },
+  {
+    "id": "2",
+    "nombre": "Suculenta",
+    "precio": 1800,
+    "img": "img/plantaazul.jpg"
+  },
+  {
+    "id": "3",
+    "nombre": "Pancakes",
+    "precio": 1500,
+    "img": "img/pancakes.jpg"
+  },
+  {
+    "id": "4",
+    "nombre": "Producto 4",
+    "precio": 2500,
+    "img": "img/pan.jpg"
+  }
+]

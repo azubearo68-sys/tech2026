@@ -93,7 +93,7 @@ h2 {
 
 
 /* Galería de plantas */
-.galeria {
+.contenedor-tarjeta{
   display: flex;          /* organiza artículos en fila */
   flex-wrap: wrap;        /* permite que bajen a otra línea si no entran */
   gap: 20px;              /* espacio entre artículos */

@@ -6,7 +6,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet"  href="css/styles.css"> <!--tuve que sacarle los puntos porque no lo tomaba githubpages-->
+    <link rel="stylesheet"  href="./css/styles.css"> <!--tuve que sacarle los puntos porque no lo tomaba githubpages-->
     <title>Primera pagina</title>
 </head>
 <body>
@@ -21,7 +21,9 @@
         <ul>
         <li><a href="./index.html">Inicio</a></li>
         <li><a href="./pages/contacto.html">Contacto</a></li>
-        <li><a href="./pages/carrito.html">Carrito</a></li>
+         <!--<li><a href="./pages/carrito.html">Carrito</a></li>-->
+         <a href="./pages/carrito.html" class="carrito-icono"
+              >🛒<span id="contador-carrito"></span
     
         
         </ul>
@@ -29,17 +31,17 @@
     </header>
 <main>
     
-     <section class="plantas">
+     <section class="contenedor">
      <h2 class="comentario">Nuestras Suculentas y Macetas</h2>
-     <div class="galeria">
-      <article class="planta">
+     <div id="contenedor-tarjeta" class="contenedor-tarjeta">
+     <!--<article class="planta">
         <img src="./img/muchasmacetas.jpg "alt="plantas">
         <h3>Macetas para suculentas</h3>
         <p>Gran variedad de  macetas confeccionadas en distintos materiales .</p>
         <p class="precio">Cada una $10000 </p>
         <button class="btn bg secondary text-dark">Agregar</button>
       </article>
-     <article class="planta">
+        <article class="planta">
        <img src="img/plantaazul.jpg" alt="planta azul">
         <h3>Suculenta</h3>
         <p>Planta resistente y fácil de cuidar, perfecta para interiores.</p>
@@ -56,13 +58,13 @@
          <button class="btn bg secondary text-dark">Agregar</button>
       </article> 
       <article class="planta">
-        <img src="img/suculentamaceta.jpg" alt="Suculenta">
+        <img src="img/suculentamaceta.jpg" alt="maceta">
         <h3>Suculenta</h3>
         <p>Planta resistente y fácil de cuidar, perfecta para interiores.</p>
         <p class="precio">Cada una $18000 </p>
         <button class="btn bg secondary text-dark">Agregar</button>
 
-      </article>
+      </article>-->
 
 
     </div>
@@ -79,6 +81,8 @@
   </div>
 
     <p>año 2026</p>
+    <p>Creado por Azucena Rodriguez</p>
+
       </nav>
     </footer>
     <script src="./js/index.js" type= "module"></script>
