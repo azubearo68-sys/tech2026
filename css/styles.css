@@ -103,10 +103,10 @@ h2 {
 .planta {
   flex: 1 1 250px;        /* cada artículo ocupa mínimo 250px y se adapta */
   border: 1px solid #ccc; /* borde suave */
-  border-radius: 8px;/*
+  border-radius: 8px;
   padding: 10px;
   text-align: center;
-  background-color: #f9f9f9;*/
+  background-color: #f9f9f9;
 
 }
 
@@ -195,4 +195,39 @@ button {
 button:hover {
   background-color: #45a049;
 }
-      
+      ----------------------------------------------------------------------------------
+           /* carrito*/
+           -------------------------------------------------------
+
+ #carrito{
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin: 20px;
+ }
+ 
+#carrito, h1 {
+  text-align: center;
+  color: #333;
+}
+.btn {
+  background: #ffd166;
+  color: #2a1e35;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+
+.btn-eliminar-carrito {
+  background-color: #96e095;
+  border: 2px solid #6ad21f;
+}
+.btn-vaciar-carrito {
+  background-color: #f7bb2b;
+  color: #1d1a20;
+}
+.btn-vaciar-carrito:hover {
+  background-color: #e0aa24;
+}

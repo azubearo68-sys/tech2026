@@ -6,14 +6,14 @@
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet"  href="./css/styles.css"> <!--tuve que sacarle los puntos porque no lo tomaba githubpages-->
+    <link rel="stylesheet"  href="../css/styles.css"> <!--tuve que sacarle los puntos porque no lo tomaba githubpages-->
     <title>Primera pagina</title>
 </head>
 <body>
       <header>
         
      <div class="div-logo">
-        <a class="logo" href="./index.html"> <img src="./img/logopl.png" alt="Logo del vivero" class="logo"></a>
+        <a class="logo" href="../index.html"> <img src="../img/logopl.png" alt="Logo del vivero" class="logo"></a>
       </div>
      <h1 class="titulo-home text-secondary">Vivero Nueva Era</h1>
 
@@ -21,7 +21,8 @@
         <ul>
         <li><a href="./index.html">Inicio</a></li>
         <li><a href="./pages/contacto.html">Contacto</a></li>
-        <li><a href="./pages/carrito.html">Carrito</a></li>
+        <li><a href="./pages/carrito.html" class="carrito-icono"
+              >🛒<span id="contador-carrito"></span></a></li>
     
         
         </ul>
@@ -30,7 +31,7 @@
     <main> 
         <h1>Carrito de Compras</h1>
         <section id="contenedor-carrito" class="contenedor-tarjetas"></section>
-        <div  id="acciones-carrito" class="acciones-carrito"></div>>
+        <div id="acciones-carrito" class="acciones-carrito"></div>
         <section id="resumen-carrito"></section>
     </main>
     
@@ -46,7 +47,9 @@
   </div>
 
     <p>año 2026</p>
+    <p>Creado por Azucena Rodriguez</p>
+
       </nav>
     </footer>
-     <script src="./js/index.js" type= "module"></script>
+     <script src="./js/carrito.js" type= "module"></script>
 </body>

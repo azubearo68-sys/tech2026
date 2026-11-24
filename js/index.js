@@ -5,7 +5,7 @@ import { agregarAlCarrito } from "./funcionesCarrito.js";
 const renderizarProductos = () => {
   const contenedor = document.getElementById("contenedor-tarjeta");
 
-  fetch("./data/productos.json")
+  fetch("./data/producto.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((producto) => {
