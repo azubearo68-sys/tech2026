@@ -11,7 +11,7 @@ const renderizarProductos = () => {
       data.forEach((producto) => {
         // creamos los articles y sus contenidos
         const tarjeta = document.createElement("article");
-        tarjeta.classList.add("planta", "text-dark");
+        tarjeta.classList.add("planta");
 
         const img = document.createElement("img");
         img.src = `./${producto.img}`;
