@@ -195,9 +195,9 @@ button {
 button:hover {
   background-color: #45a049;
 }
-      ----------------------------------------------------------------------------------
+    /*  ----------------------------------------------------------------------------------*/
            /* carrito*/
-           -------------------------------------------------------
+          /* -------------------------------------------------------*/
 
  #carrito{
   padding: 20px;
@@ -206,11 +206,33 @@ button:hover {
   margin: 20px;
  }
  
-#carrito, h1 {
+#carrito h1 {
   text-align: center;
   color: #333;
 }
-.btn {
+.card {
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+#contenedor-carrito {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/*.btn {
   background: #ffd166;
   color: #2a1e35;
   border: none;
