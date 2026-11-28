@@ -21,22 +21,32 @@ const renderizarCarrito = () => {
   if (!carrito.length) {
     const mensaje = document.createElement("p");
     mensaje.classList.add("mensaje-carrito-vacio");
-    mensaje.textContent = "Tu carrito esta vacio 😕";
+    mensaje.textContent = "Tu carrito esta vacio ";
     contenedor.appendChild(mensaje);
-
-    //IMPORTANTE: sin el return, la funcion no corta e intenta renderizar tarjetas
-    //El return corta por completo la funcion "renderizarCarrito"
     return;
   }
+  const btnPagar = document.createElement("button");
+
+btnPagar.classList.add("btn");
+
+btnPagar.textContent = "Pagar";
+
+btnPagar.addEventListener("click", () => {
+  alert("¡Gracias por tu compra!");
+  vaciarCarrito();
+  renderizarCarrito();
+});
+
+
 
   //Si hay productos en el carrito
   carrito.forEach((producto, index) => {
     const tarjeta = document.createElement("article");
-    tarjeta.classList.add("card");
+    tarjeta.classList.add("planta");
 
     const img = document.createElement("img");
 
-    //Ojo la ruta de imagen⚠️
+  
     img.src = `../${producto.img}`;
     img.alt = producto.nombre;
 
@@ -73,6 +83,7 @@ const renderizarCarrito = () => {
   });
 
   divAcciones.appendChild(btnVaciar);
+  divAcciones.appendChild(btnPagar);
 };
 
 document.addEventListener("DOMContentLoaded", () => {

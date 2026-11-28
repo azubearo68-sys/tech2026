@@ -20,9 +20,13 @@ const renderizarProductos = () => {
         const titulo = document.createElement("h3");
         titulo.textContent = producto.nombre;
 
+        const descripcion = document.createElement("p");
+        descripcion.textContent = producto.descripcion;
+
         const precio = document.createElement("p");
         precio.textContent = `$${producto.precio}`;
-
+        precio.classList.add("precio");
+        
         const boton = document.createElement("button");
         boton.classList.add("btn", "bg-secondary", "text-dark");
         boton.textContent = "Agregar al carrito";
@@ -34,6 +38,7 @@ const renderizarProductos = () => {
         // Armar la estructura
         tarjeta.appendChild(img);
         tarjeta.appendChild(titulo);
+        tarjeta.appendChild(descripcion);
         tarjeta.appendChild(precio);
         tarjeta.appendChild(boton);
 

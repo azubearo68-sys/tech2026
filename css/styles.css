@@ -127,7 +127,7 @@ h2 {
   cursor: pointer;
 }
 
-.bg.secondary {
+.bg-secondary {
   background-color: #7A8D7B; /* verde suave */
 }
 
@@ -232,7 +232,7 @@ button:hover {
   gap: 20px;
   justify-content: center;
 }
-/*.btn {
+.btn {
   background: #ffd166;
   color: #2a1e35;
   border: none;

@@ -57,6 +57,3 @@ export const vaciarCarrito = () => {
 };
 
 
-//export const vaciarCarrito = () => {
-  //////import { actualizarContador, mostrarMevaciado");
-//};
